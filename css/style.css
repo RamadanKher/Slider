@@ -1,0 +1,44 @@
+body{
+    background-image: url( ../imges/Leonardoworx.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.lyer-img {
+    width: 80%;
+    bottom: 7%;
+    left: 10%;
+}
+.slider-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+        text-align: center;
+
+    background-color: rgba(255, 233, 233,0.5);
+
+}
+.iocns{
+    font-size: 1.2rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+#clos-icon{
+    font-size: 1.2rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+.item-slider{
+    background-image: url(portfolio-4.jpg);
+height: 50%;
+width: 50%;
+
+
+    background-position:center center;
+    background-size: cover;
+}
+.crouser{
+    cursor: pointer;
+}
