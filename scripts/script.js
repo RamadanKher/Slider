@@ -1,14 +1,14 @@
-var imges=Array.from(document.getElementsByClassName("img-item")) ;
-var sss= document.getElementById("slider-div");
- var bacground=document.querySelector(".item-slider")
- var imgIndex=0;
+let imges=Array.from(document.getElementsByClassName("img-item")) ;
+let lightBox= document.getElementById("lightBox");
+ let bacground=document.querySelector(".item-slider")
+ let imgIndex=0;
 for (let index = 0; index < imges.length; index++) {
    imges[index].addEventListener("click",function (e) {
      imgSrc= e.target.src
    imgIndex=imges.indexOf(e.target)
   console.log(imgIndex)
      bacground.style.backgroundImage=`url(${imgSrc})`
-     sss.classList.replace("d-none", "d-flex");
+     lightBox.classList.replace("d-none", "d-flex");
     })
 
 }
@@ -19,7 +19,7 @@ function nextSlide() {
   if (imgIndex==imges.length) {
     imgIndex=0
   }
-  var sourcImge=imges[imgIndex].getAttribute('src');
+  let sourcImge=imges[imgIndex].getAttribute('src');
   bacground.style.backgroundImage=`url(${sourcImge})`
 }
 
@@ -29,7 +29,7 @@ function prevSlider() {
  if (imgIndex==-1) {
   imgIndex=imges.length-1
  }
-  var sourcImge =imges[imgIndex].getAttribute('src');
+  let sourcImge =imges[imgIndex].getAttribute('src');
   bacground.style.backgroundImage=`url(${sourcImge})`
 }
 
@@ -37,7 +37,7 @@ function prevSlider() {
 
 document.getElementById('clos-icon').addEventListener('click',closSlider)
 function closSlider() {
-  sss.classList.replace("d-flex","d-none");
+  lightBox.classList.replace("d-flex","d-none");
 
 }
 document.addEventListener('keydown',function (e) {
@@ -53,7 +53,7 @@ else if(e.key=="Escape"){
 })
 
 document.body.addEventListener("click",function (e) {
-  if (e.target==sss) {
+  if (e.target==lightBox) {
     closSlider()
   }
 },true );
