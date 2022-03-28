@@ -1,7 +1,5 @@
 body{
-    background-image: url( ../imges/Leonardoworx.jpg);
-    background-position: center center;
-    background-size: cover;
+   
 }
 .lyer-img {
     width: 80%;
@@ -32,10 +30,8 @@ body{
 }
 .item-slider{
     background-image: url(portfolio-4.jpg);
-height: 50%;
-width: 50%;
-
-
+    height: 50%;
+    width: 50%;
     background-position:center center;
     background-size: cover;
 }

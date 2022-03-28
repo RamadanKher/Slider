@@ -33,11 +33,7 @@ function prevSlider() {
   bacground.style.backgroundImage=`url(${sourcImge})`
 }
 
-  bacground.addEventListener("touchmove", function () {
-
-      prevSlider()
-
-  })
+ 
 
 document.getElementById('clos-icon').addEventListener('click',closSlider)
 function closSlider() {
