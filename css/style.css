@@ -22,14 +22,14 @@ body{
     margin: 1rem;
     cursor: pointer;
 }
-#clos-icon{
+#colsIcon{
     font-size: 1.2rem;
     top: 0.5rem;
     right: 0.5rem;
     cursor: pointer;
 }
-.item-slider{
-    background-image: url(portfolio-4.jpg);
+#lightBoxBakground{
+    background-image: url(../imges/portfolio-1.jpg) ;
     height: 50%;
     width: 50%;
     background-position:center center;
